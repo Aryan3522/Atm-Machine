@@ -79,11 +79,15 @@ cd Atm-Machine
 3. Compile the project
 ```
 javac src/Main.java
+or
+javac -d bin src/Main.java src/users/*.java src/transactions/*.java
 ```
 
 4. Run the application
 ```
 java src.Main
+or
+java -cp bin Main
 ```
 
 #### 🎯 Project Objective
