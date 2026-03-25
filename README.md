@@ -1,19 +1,28 @@
-# 🏦 ATM Machine (Core Java)
+# 🏦 ATM (Core Java)
+
 <p>
-A console-based ATM Machine simulation built purely using Core Java, structured with industry-grade package architecture and clean separation of concerns.
+A console-based ATM simulation built purely using Core Java, structured with industry-grade package architecture and clean separation of concerns.
 This project focuses on simulating a minimal but realistic ATM workflow — validating ATM number, authenticating via PIN, and enabling core banking operations like balance check, withdrawal, and deposit — without relying on any external libraries.
 </p>
 
 ###### 🚀 Features
+
 ###### 🔐 ATM Number + PIN Authentication
+
 ###### 💰 Balance Inquiry
+
 ###### 💸 Cash Withdrawal
+
 ###### ➕ Deposit Money (Credit)
+
 ###### 🧾 Transaction Flow Handling
+
 ###### 📦 Package-based Modular Architecture
+
 ###### ⚙️ No External Dependencies (Pure Core Java)
 
 ## 🧠 Core Functional Flow
+
 ```text
 1. User enters ATM Number
 2. System validates user existence
@@ -26,6 +35,7 @@ This project focuses on simulating a minimal but realistic ATM workflow — vali
 ```
 
 ## 🛠️ Tech Stack
+
 ```text
 Language: Java (Core Java)
 
@@ -38,6 +48,7 @@ Concepts Used:
 ```
 
 ## 📂 Project Structure (Package-Oriented)
+
 ```text
 ATM-MACHINE/
 │
@@ -57,6 +68,7 @@ ATM-MACHINE/
 ```
 
 #### 🧩 Architecture Notes
+
 users/ → Handles authentication & user data
 account/ → Manages balance and account logic
 transaction/ → Encapsulates transaction operations
@@ -66,31 +78,37 @@ main/ → Entry point of the application
 This structure mirrors real-world backend layering principles.
 
 ## ▶️ How to Run
+
+<p>
+It’s best to open the cloned repository directly as the root project in your IDE rather than navigating into it via the parent directory (e.g., using `cd Atm-Machine` from a higher-level folder).
+
+When the project is opened as the root, the IDE correctly detects the project structure, configures source paths, and
+manages compilation/output directories automatically. This ensures `.class` files are generated properly and prevents
+classpath-related errors.
+
+In contrast, if you open the parent directory (where the repo is cloned) instead of the project itself, the IDE may fail
+to recognize it as a Java project. That’s when issues like missing packages, disabled run buttons, or compilation errors
+typically appear.
+</p>
+
+or
+
+#### You can always use the terminal commands as given
+
 1. Clone the repository
+
 ```
 git clone https://github.com/your-username/Atm-Machine.git
 ```
 
 2. Navigate to project
+
 ```
 cd Atm-Machine
 ```
 
-or
-
-```text
-It’s best to open the cloned repository directly as the root project in your IDE rather than navigating into it via the parent directory (e.g., using `cd Atm-Machine` from a higher-level folder).
-
-When the project is opened as the root, the IDE correctly detects the project structure, configures source paths, and manages compilation/output directories automatically. This ensures `.class` files are generated properly and prevents classpath-related errors.
-
-In contrast, if you open the parent directory (where the repo is cloned) instead of the project itself, the IDE may fail to recognize it as a Java project. That’s when issues like missing packages, disabled run buttons, or compilation errors typically appear.
-
-```
-
-or
-#### You can always use the terminal commands as given
-
 3. Compile the project
+
 ```
 javac src/Main.java
 or
@@ -98,6 +116,7 @@ javac -d bin src/Main.java src/users/*.java src/transactions/*.java
 ```
 
 4. Run the application
+
 ```
 java src.Main
 or
@@ -105,6 +124,7 @@ java -cp bin Main
 ```
 
 #### 🎯 Project Objective
+
 Simulate a real-world ATM interaction flow
 Enforce clean architecture using packages
 Strengthen Core Java + OOP fundamentals
@@ -141,6 +161,7 @@ Enhance readability and maintainability
 If you identify any gap — open an issue first and discuss the change.
 
 📌 Future Enhancements
+
 ```
 💾 Database Integration (MySQL / MongoDB)
 🖥️ GUI Interface (Swing / JavaFX)
@@ -156,12 +177,14 @@ This project is open-source under the MIT License.
 #### ⭐ Support
 
 If this project adds value:
+
 ```
 ⭐ Star the repository
 🍴 Fork it
 🛠️ Contribute
 ⚡ Positioning Note (Important)
 ```
+
 This project is intentionally built using pure Core Java with no external dependencies to emphasize:
 
 Strong fundamentals
