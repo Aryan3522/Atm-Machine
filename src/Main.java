@@ -41,27 +41,26 @@ public class Main {
             System.out.println("Invalid ATM Number");
         } else {
             if (authentication.getAtmNo() == user.getAtmNumber()) {
+                for (int amount : creditAmount) {
+                    txn.credit(user, amount);
+                     System.out.println("Transaction id: " + txn.getTransactionId());
+                    try {
+                        System.out.println("Crediting amount: " + txn.getTransactionAmount(amount));
+                        Thread.sleep(300);
+                    } catch (InterruptedException e) {
+                        System.out.println("task interrupted");
+                        throw e;
+                    }
+                }
                 if (authentication.getAtmPass() == user.getAtmPassword()) {
                     System.out.println(greet.greetings() + user.getName() + " " + "Welcome Abroad!");
-                    for (int amount : creditAmount) {
-                        txn.credit(user, amount);
-                        // System.out.println("Transaction id: " + txn.getTransactionId());
-
-                        try {
-                            System.out.println("Crediting amount: " + txn.getTransactionAmount(amount));
-                            Thread.sleep(1000);
-                        } catch (InterruptedException e) {
-                            System.out.println("task interrupted");
-                            throw e;
-                        }
-                    }
                     for (int amount : debitAmount) {
                         txn.debit(user, amount);
-                        // System.out.println("Transaction id: " + txn.getTransactionId());
+                         System.out.println("Transaction id: " + txn.getTransactionId());
 
                         try {
                             System.out.println("Debiting amount: " + txn.getTransactionAmount(amount));
-                            Thread.sleep(1000);
+                            Thread.sleep(300);
                         } catch (InterruptedException e) {
                             System.out.println("task interrupted");
                             throw e;
