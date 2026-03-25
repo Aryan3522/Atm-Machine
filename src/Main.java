@@ -18,14 +18,19 @@ public class Main {
         //    amount to be debited
         ArrayList<Integer> debitAmount;
 
-        Auth authentication = new Auth(1, "Rahul", 6070984330131704L, 4522);
-        Users user = new Users("Rahul", 6070984330131704L, 4522);
+        Auth authentication = new Auth("Aryan", 6070984330131704L, 4522);
+        Users user = new Users("Aryan", 6070984330131704L, 4522);
         Main greet = new Main();
 
         creditAmount = new ArrayList<>(Arrays.asList(5000, 2000, 3000));
 
         debitAmount = new ArrayList<>(Arrays.asList(1000, 2000, 5000));
+
+//        add new debit amount
         debitAmount.add(1200);
+
+//        add new credit amount
+        creditAmount.add(1000);
 
         Transactions txn = new Transactions(6070984330131704L);
 
