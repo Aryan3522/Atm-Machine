@@ -4,7 +4,7 @@ public class Auth extends Users {
     private long AtmNo = 6070984330131704L;
     private int AtmPass;
 
-    public Auth(int id, String name, long atmNumber, int atmPassword) {
+    public Auth(String name, long atmNumber, int atmPassword) {
         super(name, atmNumber, atmPassword);
         this.AtmNo = atmNumber;
         this.AtmPass = atmPassword;
