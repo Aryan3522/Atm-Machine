@@ -79,22 +79,6 @@ This structure mirrors real-world backend layering principles.
 
 ## ▶️ How to Run
 
-<p>
-It’s best to open the cloned repository directly as the root project in your IDE rather than navigating into it via the parent directory (e.g., using `cd Atm-Machine` from a higher-level folder).
-
-When the project is opened as the root, the IDE correctly detects the project structure, configures source paths, and
-manages compilation/output directories automatically. This ensures `.class` files are generated properly and prevents
-classpath-related errors.
-
-In contrast, if you open the parent directory (where the repo is cloned) instead of the project itself, the IDE may fail
-to recognize it as a Java project. That’s when issues like missing packages, disabled run buttons, or compilation errors
-typically appear.
-</p>
-
-or
-
-#### You can always use the terminal commands as given
-
 1. Clone the repository
 
 ```
